@@ -20,8 +20,8 @@ public class Palindrome{
         //one at start and one at end
         //iterate up and down with both pointers
         //while start is less than end
-        //if start and end are not the same, return yes
-        //else return no
+        //if start and end are not the same, return no
+        //else return yes
         
         Scanner sc=new Scanner(System.in);
         String A=sc.next();        
