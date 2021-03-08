@@ -34,12 +34,12 @@ public class Anagram {
         
         int [] count = new int [256];
         
-        String aa = a.toLowerCase();
-        String bb = b.toLowerCase();
+        a = a.replaceAll("[^a-zA-Z0-9]","").toLowerCase();
+        b = b.replaceAll("[^a-zA-Z0-9]","").toLowerCase();
         
-        for(int i=0; i<aa.length(); i++){
-            count[aa.charAt(i)]++;
-            count[bb.charAt(i)]--;
+        for(int i=0; i<a.length(); i++){
+            count[a.charAt(i)]++;
+            count[b.charAt(i)]--;
         }
         
         for(int i=0; i<count.length; i++){
